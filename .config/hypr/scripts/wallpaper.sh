@@ -45,6 +45,7 @@ main() {
     pkill -SIGUSR1 kitty
 
     source ~/.cache/wal/colors.sh && cp -r "$wallpaper" ~/wallpapers/pywallpaper.jpg 
+    sudo "$HOME/.config/hypr/scripts/update_sddm_bg.sh" "$selected_wallpaper"
 }
 
 main
